@@ -1,0 +1,28 @@
+fx_version 'cerulean'
+game 'gta5'
+lua54 'yes'
+
+dependency {
+    "ox_mysql",
+}
+
+client_script {
+    'client/**.lua',
+}
+
+server_script {
+    'server/**.lua',
+    '@oxmysql/lib/MySQL.lua',
+}
+
+shared_script {
+    '@ox_lib/init.lua',
+    'config.lua',
+}
+
+ui_page "public/index.html"
+
+files {
+    "public/**",
+    "public/**/**",
+}
