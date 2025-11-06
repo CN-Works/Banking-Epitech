@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 
 dependency {
-    "ox_mysql",
+    "oxmysql",
 }
 
 client_script {
